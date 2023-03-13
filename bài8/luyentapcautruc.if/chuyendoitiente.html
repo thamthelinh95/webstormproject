@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Amount</td>
+<!--        <td>From Currency</td>-->
+<!--        <td>To currency</td>-->
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="sotien" >
+
+        </td>
+        <td>
+<!--            <select name="currency">-->
+<!--                <option value="vietnam">VND</option>-->
+<!--                <option value="dolamy">USD</option>-->
+<!--            </select>-->
+
+        </td>
+        <td>
+<!--            <select name="currency">-->
+<!--                <option value="dolamy">USD</option>-->
+<!--                <option value="vietnam">VND</option>-->
+<!--            </select>-->
+        </td>
+        <td>
+            <button onclick="chuyentien()">Convert</button>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
+<script>
+    function chuyentien() {
+        let tienUSD = document.getElementById("sotien").value;
+        let tienVND = tienUSD * 24000;
+        alert(tienVND);
+    }
+
+</script>

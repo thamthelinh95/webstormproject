@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hoahong</title>
+</head>
+<body>
+<span>nhaptienhang</span>
+<input type="text" id="tienhang">
+<button onclick="hoahong">tinh</button>
+<p id="hienthi"></p>
+</body>
+
+</html>
+<script>
+  function hoahong() {
+    let tienhang=+document.getElementById("tienhang").value;
+    //a la hoa hong 5% tu 50-->100
+      let a=tienhang*5/100
+      //b la hoa hong 7% tu 100-->150
+      let b=tienhang*7/100
+      //c la hoa hong 10% tu >150
+      let c=tienhang*10/100
+      if (tienhang<"50"){
+          document.getElementById("hienthi").innerHTML="khong co hoa hong"
+      }else if(tienhang<"100"){
+          document.getElementById("hienthi").innerHTML="tien hoa hong lai:  "+a+"tr>";}
+          else if(tienhang<"150"){
+          document.getElementById("hienthi").innerHTML="tien hoa hong lai:  "+b+"tr>";}
+          else if(tienhang>"150"){
+          document.getElementById("hienthi").innerHTML="tien hoa hong lai:  "+c+"tr>";
+      }
+  }
+</script>
